@@ -7,6 +7,6 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
 
 
 ## July
-- TIL: lorem ipsum
-- Fail: 
+- TIL/still Confused: Javascript Hoisting [I'm an inline-style link with title](https://scotch.io/tutorials/understanding-hoisting-in-javascript "Undestanding Hoisting in Javascript") 
+
 
