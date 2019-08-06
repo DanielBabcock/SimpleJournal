@@ -4,6 +4,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
 
 ## Table of contents 2019
 - [July](#july)
+- [August](#august)
 
 
 ## July
@@ -12,3 +13,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
 - TIL: ES6 things. I was rejecting a pull request and decided to spend some time leanring more about the why's of let vs var. Found this little article by my favourite code blogger Tania Rascia,[ES6 Syntax and Feature Overview
 ](https://www.taniarascia.com/es6-syntax-and-feature-overview/ "ES6 Syntax and Feature Overview
 ").
+
+
+## August
+- Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
