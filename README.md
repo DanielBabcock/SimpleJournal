@@ -16,4 +16,4 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
 
 
 ## August
-- Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
+- TIL: Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
