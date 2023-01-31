@@ -26,3 +26,8 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
 ## January
 
 - TIL: Px vs REM [Article: Why designers should move from px to rem ](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15 "Why designers should move from px to rem ") : "we are in the dark about users browser preset choices, so using rem will serve zoom and root font-size change and make everyone happy."
+- TIL: for Hubspot form embeds on external sites you can remove CSS styling coming from Hubspot by adding "css" to remove basic styling and "cssRequired" to remove styling from required items to the embed code. Example:
+  <code>
+  portalId: "6060861",                            formId: "218dced7-2147-4cd5-aff6-b8e424b2d531",                            css: '',                            onFormSubmitted: function($form) {                                setTimeout(function() {                                    window.location.href = "https://www.ministrybrands.com/unleash-2023/thank-you/";                                }, 500);                            }  });
+  </code>
+  https://community.hubspot.com/t5/CMS-Development/Custom-Form-Style/td-p/5707
