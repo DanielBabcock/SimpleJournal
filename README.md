@@ -1,6 +1,6 @@
 # Simple Journal
 
-May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions I had || Answers found, Topics of Curiosity, and more.
+May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more.
 
 ## Table of contents 2019
 
@@ -31,3 +31,18 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Questions 
   portalId: "6060861",                            formId: "218dced7-2147-4cd5-aff6-b8e424b2d531",                            css: '',                            onFormSubmitted: function($form) {                                setTimeout(function() {                                    window.location.href = "https://www.ministrybrands.com/unleash-2023/thank-you/";                                }, 500);                            }  });
   </code>
   https://community.hubspot.com/t5/CMS-Development/Custom-Form-Style/td-p/5707
+
+## March
+
+- Snippet: for switching content based on URL in PHP Wordpress Templates. Saves writing multiple templates often times, primary example is a Landing Page and it's coresponding Thank You page or just multiple pages with very similar content and small diffs.
+  <pre>
+  <code>
+  <?php if ( is_page('thank-you') ) { ?>
+  
+  
+  <?php } else { ?>
+  
+  
+  <?php } ?>
+  </code>
+  </pre>
