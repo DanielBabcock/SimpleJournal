@@ -2,10 +2,10 @@
 
 May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more.
 
-## Table of contents 2019
+## Table of contents
 
-- [July](#july)
-- [August](#august)
+- [July](#july2019)
+- [August](#august2019)
 
 ## July
 
@@ -28,9 +28,10 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - TIL: Px vs REM [Article: Why designers should move from px to rem ](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15 "Why designers should move from px to rem ") : "we are in the dark about users browser preset choices, so using rem will serve zoom and root font-size change and make everyone happy."
 - TIL: for Hubspot form embeds on external sites you can remove CSS styling coming from Hubspot by adding "css" to remove basic styling and "cssRequired" to remove styling from required items to the embed code. Example:
   <code>
-  portalId: "6060861",                            formId: "218dced7-2147-4cd5-aff6-b8e424b2d531",                            css: '',                            onFormSubmitted: function($form) {                                setTimeout(function() {                                    window.location.href = "https://www.ministrybrands.com/unleash-2023/thank-you/";                                }, 500);                            }  });
+  portalId: "",
+  formId: "",
+      css: '',
   </code>
-  https://community.hubspot.com/t5/CMS-Development/Custom-Form-Style/td-p/5707
 
 ## March
 
@@ -46,3 +47,79 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   <?php } ?>
   </code>
   </pre>
+
+## May
+
+- and a further snippet url conditional content requiring further else if to you if - else.
+<pre>
+  <code>
+       <?php if (is_page('url')) { ?>
+            <!-- write html here -->
+        <?php } else if (is_page('partner-awana')) { ?>
+            <!-- write html here -->
+        <?php } else if (is_page('partner-onqu')) { ?>
+            <!-- write html here -->
+        <?php } else { ?>
+            <!-- write html here -->
+        <?php } ?>
+    </code>
+  </pre>
+
+## JULY
+
+- Was struggling with indention in lists and paragraphs specifically around using custom images in the places of bullet points with a nice amount of space between them and the first line while keeping the subsequent lines from overflowing under the list decoration images..
+  <pre>
+    <code>
+      <style>
+        /* set all of X block elements to Y indention */
+        li {
+          text-indent: -17px
+        }
+        /* remove indention from :first-line */
+        li:first-line {
+          text-indent: 0
+        }
+        /* remove default list decoration/bullet points */
+        ul {      
+          list-style: none;
+        }
+        /* custom image in the place of list decoration/bullet points*/
+        li::before {
+          content: url('');
+          display: inline-block;    
+          margin-right: 13px;
+        }
+      </style>
+
+      <li>
+        Requires workarounds:
+        Must search and clean up “unauthorized accounts” in chart of accounts
+      </li>
+
+    </code>
+  </pre>
+
+- Two ways to generate Pardot Forms in Wordpress sites after downloading the plugin:
+  w/ php
+  <pre>
+      <code>
+  <?php echo do_shortcode('[mb_pardot handler="{URL-here}" brand="brand_asc" prospect="MQL" interest="ChMS" redirect="{URL-here}" comments_type="textarea" comments="How did you hear about us?" button_color="#6486FD"]') ?>      
+      </code>
+    </pre>
+  w/ html
+  <pre>
+      <code>
+  [mb_pardot handler="{URL-here}" brand="HGS" prospect="MQL" interest="" redirect="{URL-here}" button_color="##f47a55"]      
+      </code>
+    </pre>
+
+## August
+
+- #If IE BUGS you can use this media query to attack them without breaking things in normal browsers:
+<pre>
+  <code>
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      // IE10+ CSS here
+    }
+  </code>
+</pre>
