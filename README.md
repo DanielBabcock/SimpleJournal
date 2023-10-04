@@ -1,11 +1,11 @@
 # Simple Journal
 
-May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more.
+May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more. It's also a place a I just put random simple things that I forget exactly how to use.
 
-## Table of contents
+<!-- ## Table of contents -->
 
-- [July](#july2019)
-- [August](#august2019)
+<!-- - [July](#july2019)
+- [August](#august2019) -->
 
 ## July
 
@@ -123,3 +123,8 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
     }
   </code>
 </pre>
+
+## September
+
+- PHP Template place to drop content in via the admin page editor.
+<?php the_content(); ?>
