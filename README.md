@@ -128,3 +128,32 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 - PHP Template place to drop content in via the admin page editor.
 <?php the_content(); ?>
+
+## October 2023
+
+- simple css hack to help visually debug layout issues..
+<pre>
+  <code>
+    * { border: 1px solid red; }
+  </code>
+</pre>
+
+- node upgrade
+  <pre>
+    <code>
+  sudo npm cache clean -f 
+    </code>
+  </pre>
+  (force) clear you npm cache
+  <pre>
+    <code>
+  sudo npm install -g n 
+    </code>
+  </pre>
+  install n (this might take a while)
+  <pre>
+    <code>
+  sudo n stable 
+    </code>
+  </pre>
+  upgrade to the current stable version
