@@ -138,22 +138,55 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   </code>
 </pre>
 
-- node upgrade
-  <pre>
-    <code>
-  sudo npm cache clean -f 
-    </code>
-  </pre>
+- node
+  Check version with <pre><code>node -v</code></pre>
+    <pre>
+      <code>
+    sudo npm cache clean -f 
+      </code>
+    </pre>
   (force) clear you npm cache
-  <pre>
-    <code>
-  sudo npm install -g n 
-    </code>
-  </pre>
+    <pre>
+      <code>
+    sudo npm install -g n 
+      </code>
+    </pre>
   install n (this might take a while)
-  <pre>
-    <code>
-  sudo n stable 
-    </code>
-  </pre>
+    <pre>
+      <code>
+    sudo n stable 
+      </code>
+    </pre>
   upgrade to the current stable version
+
+If you initially installed Node.js with <a href="https://brew.sh/" target="_blank">Homebrew</a>, run:
+
+<pre><code>brew update</code></pre>
+
+<pre><code>brew upgrade node</code></pre>
+
+<pre><code>npm install -g npm</code></pre>
+
+Or as a one-liner:
+
+<pre><code>brew update && brew upgrade node && npm install -g npm</code></pre>
+
+A convenient way to change versions is to use n:
+
+<pre><code>brew install n</code></pre>
+
+To install the latest version of Node.js with n:
+
+<pre><code>n latest</code></pre>
+
+Or, to install the latest LTS version with n:
+
+<pre><code>n lts</code></pre>
+
+Alternatively, you could use nvm instead of <a href="https://github.com/tj/n" target="_blank">n</a>:
+
+<pre><code>brew install nvm</code></pre>
+
+To install the latest version of <a href="https://nodejs.org/en" target="_blank">Node.js</a> with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:
+
+<pre><code>nvm install node</code></pre>
