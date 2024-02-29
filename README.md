@@ -36,8 +36,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 ## March
 
 - Snippet: for switching content based on URL in PHP Wordpress Templates. Saves writing multiple templates often times, primary example is a Landing Page and it's coresponding Thank You page or just multiple pages with very similar content and small diffs.
-  <pre>
-  <code>
+  ```
   <?php if ( is_page('thank-you') ) { ?>
   
   
@@ -45,8 +44,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   
   
   <?php } ?>
-  </code>
-  </pre>
+  ```
 
 ## May
 
