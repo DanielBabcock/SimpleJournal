@@ -90,14 +90,14 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
     Requires workarounds:
     Must search and clean up “unauthorized accounts” in chart of accounts
   </li>
-```
+
 
 - Two ways to generate Pardot Forms in Wordpress sites after downloading the plugin:
   w/ php
 ```
   <?php echo do_shortcode('[mb_pardot handler="{URL-here}" brand="brand_asc" prospect="MQL" interest="ChMS" redirect="{URL-here}" comments_type="textarea" comments="How did you hear about us?" button_color="#6486FD"]') ?>      
 ```      
-  w/ html
+- -  w/ html
 ```
   [mb_pardot handler="{URL-here}" brand="HGS" prospect="MQL" interest="" redirect="{URL-here}" button_color="##f47a55"]      
 ```
@@ -138,7 +138,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   install n (this might take a while)
 ```   
     sudo n stable 
-```   
+  
   upgrade to the current stable version
 
 If you initially installed Node.js with <a href="https://brew.sh/" target="_blank">Homebrew</a>, run:
