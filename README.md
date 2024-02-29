@@ -263,4 +263,34 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
     </div>
 
 
+### Useful Wordpress Plugins
+- - Yoast SEO
+- - Wp Mail SMTP
+- - Smush
+- - GTM4WP
+- - Busted!
+- - NotificationX
+- - Better Find and Replace
+- - Better Search Replace
+- - 
 
+
+### Common errors for Content Producers (SEO, Performance, Accessibility):
+- Title tags and Headline H1 tags:
+
+- - Main Differences:
+- - - Title Tags appear in search engines and the Web browser’s title bar
+- - - H1 Headers appear within the body text of the webpage
+- - - Search engines give more weight to Title Tags than H1 Headers
+
+- - Common Best Practices:
+- - - Both Title and H1 should be slightly different, not identical.
+- - - Use only one Title Tag and one H1 Header per webpage (Do not use H1 for styling purposes)
+- - - Include the page’s primary keyword in both tags
+- - - Try to place the keyword early in both tags
+- - - Use the keyword only once within each tag
+- - - Keep both titles short (55 characters or less recommended, 60 char absolute max) 
+
+- Images:
+- - Sizing:
+- - Accessibility: 
