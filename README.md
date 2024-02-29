@@ -23,7 +23,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 - [January](#jan)
 
-## January
+## January #jan
 
 - TIL: Px vs REM [Article: Why designers should move from px to rem ](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15 "Why designers should move from px to rem ") : "we are in the dark about users browser preset choices, so using rem will serve zoom and root font-size change and make everyone happy."
 - TIL: for Hubspot form embeds on external sites you can remove CSS styling coming from Hubspot by adding "css" to remove basic styling and "cssRequired" to remove styling from required items to the embed code. Example:
@@ -190,3 +190,29 @@ Alternatively, you could use nvm instead of <a href="https://github.com/tj/n" ta
 To install the latest version of <a href="https://nodejs.org/en" target="_blank">Node.js</a> with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:
 
 <pre><code>nvm install node</code></pre>
+
+
+## Table of contents 2024
+
+- [February](#feb24)
+
+## February #feb24
+
+- Alt text solutions for CSS Background Images: 
+- - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
+- - Instead of applying a background image to a div or other block element via CSS background image apply it to the span within the div with rol= and aria-label= applied and the content inside of that span.
+<pre><code>
+  <div>
+    <span class="background-image" role="img" aria-label="[place alt text here]> </span>
+      [all the rest of my content]
+  </div>
+</code></pre>
+
+OR a slightly hackier way where the CSS background image is still applied to the div but will allow a screen reader to ignore the div and read the span's aria-label in liu of a normal alt tag before moving on to the content.
+
+<pre><code>
+  <div class="background-image">
+    <span role="img" aria-label="[place alt text here]> </span>
+      [all the rest of my content]
+  </div>
+</code></pre>
