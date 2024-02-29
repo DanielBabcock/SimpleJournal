@@ -3,9 +3,11 @@
 May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more. It's also a place a I just put random simple things that I forget exactly how to use.
 
 <!-- ## Table of contents -->
+<a id="feb24"></a>
 
-<!-- - [July](#july2019)
-- [August](#august2019) -->
+
+
+- [Table of Contents 2024](#contents24)
 
 ## July
 
@@ -173,7 +175,7 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
 
 <pre><code>nvm install node</code></pre>
 
-
+<a id="contents24"></a>
 ## Table of contents 2024
 
 - [February](#feb24)
