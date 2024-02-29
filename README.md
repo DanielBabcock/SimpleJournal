@@ -44,117 +44,101 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   
   
   <?php } ?>
-  ```
+```
 
 ## May
 
 - and a further snippet url conditional content requiring further else if to you if - else.
-<pre>
-  <code>
-       <?php if (is_page('url')) { ?>
-            <!-- write html here -->
-        <?php } else if (is_page('partner-awana')) { ?>
-            <!-- write html here -->
-        <?php } else if (is_page('partner-onqu')) { ?>
-            <!-- write html here -->
-        <?php } else { ?>
-            <!-- write html here -->
-        <?php } ?>
-    </code>
-  </pre>
+```
+<?php if (is_page('url')) { ?>
+    <!-- write html here -->
+<?php } else if (is_page('partner-awana')) { ?>
+    <!-- write html here -->
+<?php } else if (is_page('partner-onqu')) { ?>
+    <!-- write html here -->
+<?php } else { ?>
+    <!-- write html here -->
+<?php } ?>
+```
 
 ## JULY
 
 - Was struggling with indention in lists and paragraphs specifically around using custom images in the places of bullet points with a nice amount of space between them and the first line while keeping the subsequent lines from overflowing under the list decoration images..
-  <pre>
-    <code>
-      <style>
-        /* set all of X block elements to Y indention */
-        li {
-          text-indent: -17px
-        }
-        /* remove indention from :first-line */
-        li:first-line {
-          text-indent: 0
-        }
-        /* remove default list decoration/bullet points */
-        ul {      
-          list-style: none;
-        }
-        /* custom image in the place of list decoration/bullet points*/
-        li::before {
-          content: url('');
-          display: inline-block;    
-          margin-right: 13px;
-        }
-      </style>
+```
+  <style>
+    /* set all of X block elements to Y indention */
+    li {
+      text-indent: -17px
+    }
+    /* remove indention from :first-line */
+    li:first-line {
+      text-indent: 0
+    }
+    /* remove default list decoration/bullet points */
+    ul {      
+      list-style: none;
+    }
+    /* custom image in the place of list decoration/bullet points*/
+    li::before {
+      content: url('');
+      display: inline-block;    
+      margin-right: 13px;
+    }
+  </style>
 
-      <li>
-        Requires workarounds:
-        Must search and clean up “unauthorized accounts” in chart of accounts
-      </li>
-
-    </code>
-  </pre>
+  <li>
+    Requires workarounds:
+    Must search and clean up “unauthorized accounts” in chart of accounts
+  </li>
+```
 
 - Two ways to generate Pardot Forms in Wordpress sites after downloading the plugin:
   w/ php
-  <pre>
-      <code>
+```
   <?php echo do_shortcode('[mb_pardot handler="{URL-here}" brand="brand_asc" prospect="MQL" interest="ChMS" redirect="{URL-here}" comments_type="textarea" comments="How did you hear about us?" button_color="#6486FD"]') ?>      
-      </code>
-    </pre>
+```      
   w/ html
-  <pre>
-      <code>
+```
   [mb_pardot handler="{URL-here}" brand="HGS" prospect="MQL" interest="" redirect="{URL-here}" button_color="##f47a55"]      
-      </code>
-    </pre>
+```
 
 ## August
 
 - #If IE BUGS you can use this media query to attack them without breaking things in normal browsers:
-<pre>
-  <code>
+```
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       // IE10+ CSS here
     }
-  </code>
-</pre>
+```
 
 ## September
 
 - PHP Template place to drop content in via the admin page editor.
-<?php the_content(); ?>
+```
+  <?php the_content(); ?>
+```
 
 ## October 2023
 
 - simple css hack to help visually debug layout issues..
-<pre>
-  <code>
+```
     * { border: 1px solid red; }
-  </code>
-</pre>
+```
 
 - node
   Check version with <pre><code>node -v</code></pre>
-    <pre>
-      <code>
+```
     sudo npm cache clean -f 
-      </code>
-    </pre>
-  (force) clear you npm cache
-    <pre>
-      <code>
+```
+  (force) clear your npm cache
+```  
+```
     sudo npm install -g n 
-      </code>
-    </pre>
+```
   install n (this might take a while)
-    <pre>
-      <code>
+```   
     sudo n stable 
-      </code>
-    </pre>
+```   
   upgrade to the current stable version
 
 If you initially installed Node.js with <a href="https://brew.sh/" target="_blank">Homebrew</a>, run:
