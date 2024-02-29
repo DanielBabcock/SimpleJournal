@@ -16,8 +16,8 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - [August](#aug19)
 
 
-## July 
 <a id="jul19"></a>
+## July 
 
 - TIL/still Confused: Javascript Hoisting [Article: Understanding Hoisting in Javascrip](https://scotch.io/tutorials/understanding-hoisting-in-javascript "Understanding Hoisting in Javascript")
 - TIL: about Block Scope vs Function Scope, [here's an article about it.](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe "The Difference Between Function and Block Scope in JavaScript")
@@ -60,9 +60,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   ```
   <?php if ( is_page('thank-you') ) { ?>
   
-  
   <?php } else { ?>
-  
   
   <?php } ?>
 
@@ -70,25 +68,25 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 ## May
 <a id="may23"></a>
 
-- and a further snippet url conditional content requiring further else if to you if - else.
+- and a further snippet url conditional content requiring further else if to your if - else. (write unique html/code in between each)
 
-<pre>
-<?php if (is_page('url')) { ?>
-    <!-- write html here -->
-<?php } else if (is_page('partner-awana')) { ?>
-    <!-- write html here -->
-<?php } else if (is_page('partner-onqu')) { ?>
-    <!-- write html here -->
-<?php } else { ?>
-    <!-- write html here -->
-<?php } ?>
-</pre>
+  ```
+  <?php if (is_page('url')) { ?>
+      
+  <?php } else if (is_page('id-id')) { ?>
+      
+  <?php } else if (is_page('id-id')) { ?>
+      
+  <?php } else { ?>
+      
+  <?php } ?>
+
 
 
 ## July
 <a id="jul23"></a>
 - Was struggling with indention in lists and paragraphs specifically around using custom images in the places of bullet points with a nice amount of space between them and the first line while keeping the subsequent lines from overflowing under the list decoration images..
-```
+  ```
   <style>
     /* set all of X block elements to Y indention */
     li {
