@@ -237,7 +237,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
 - - Instead of applying a background image to a div or other block element via CSS background image apply it to the span within the div with rol= and aria-label= applied and the content inside of that span.
 
-```
+  
   <div>
     <span class="background-image" role="img" aria-label="place alt text here"> </span>
       all the rest of my content
@@ -246,7 +246,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 - - OR a slightly hackier way where the CSS background image is still applied to the div but will allow a screen reader to ignore the div and read the span's aria-label in liu of a normal alt tag before moving on to the content.
 
-  ```
+  
   <div class="background-image">
     <span role="img" aria-label="place alt text here"> </span>
       all the rest of my content
