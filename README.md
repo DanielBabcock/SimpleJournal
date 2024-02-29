@@ -10,7 +10,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 
 ## Table of Contents 2019 
-<a id="conetnts2019"></a>
+<a id="contents2019"></a>
 
 - [July](#jul19)
 - [August](#aug19)
@@ -32,7 +32,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 
 ## Table of Contents 2023
-<a id="conetnts2023"></a>
+<a id="contents2023"></a>
 
 - [January](#jan23)
 - [March](#mar23) 
@@ -130,7 +130,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <a id="aug23"></a>
 
 - #If IE BUGS you can use this media query to attack them without breaking things in normal browsers:
-```
+  ```
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       // IE10+ CSS here
     }
@@ -140,35 +140,34 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <a id="sep23"></a>
 
 - PHP Template place to drop content in via the admin page editor.
-```
+  ```
   <?php the_content(); ?>
-```
+
 
 ## October 2023
 <a id="oct23"></a>
 
 - simple css hack to help visually debug layout issues..
-```
+  ```
     * { border: 1px solid red; }
-```
+
 
 - node
   Check version with <pre><code>node -v</code></pre>
-```
+  ```
     sudo npm cache clean -f 
-```
-  (force) clear your npm cache
-```  
-```
+
+- -  (force) clear your npm cache
+  ```
     sudo npm install -g n 
-```
-  install n (this might take a while)
-```   
+  
+- -  install n (this might take a while)
+  ```   
     sudo n stable 
   
-  upgrade to the current stable version
+- -  upgrade to the current stable version
 
-If you initially installed Node.js with <a href="https://brew.sh/" target="_blank">Homebrew</a>, run:
+- If you initially installed Node.js with <a href="https://brew.sh/" target="_blank">Homebrew</a>, run:
 
 <pre><code>brew update</code></pre>
 
@@ -176,27 +175,27 @@ If you initially installed Node.js with <a href="https://brew.sh/" target="_blan
 
 <pre><code>npm install -g npm</code></pre>
 
-Or as a one-liner:
+- Or as a one-liner:
 
 <pre><code>brew update && brew upgrade node && npm install -g npm</code></pre>
 
-A convenient way to change versions is to use n:
+- A convenient way to change versions is to use n:
 
 <pre><code>brew install n</code></pre>
 
-To install the latest version of Node.js with n:
+- To install the latest version of Node.js with n:
 
 <pre><code>n latest</code></pre>
 
-Or, to install the latest LTS version with n:
+- Or, to install the latest LTS version with n:
 
 <pre><code>n lts</code></pre>
 
-Alternatively, you could use nvm instead of <a href="https://github.com/tj/n" target="_blank">n</a>:
+- Alternatively, you could use nvm instead of <a href="https://github.com/tj/n" target="_blank">n</a>:
 
 <pre><code>brew install nvm</code></pre>
 
-To install the latest version of <a href="https://nodejs.org/en" target="_blank">Node.js</a> with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:
+- To install the latest version of <a href="https://nodejs.org/en" target="_blank">Node.js</a> with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:
 
 <pre><code>nvm install node</code></pre>
 
@@ -206,29 +205,20 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
 
 
 - [Febraury](#feb24)
-<!-- - [March](#mar24) 
-- [April](#apr24)
-- [May](#may24)
-- [June](#jun24)
-- [July](#jul24)
-- [August](#aug24)
-- [September](#sep24)
-- [October](#oct24)  
-- [November](#nov24) 
-- [December](#dec24) -->
+<!-- - [March](#mar24)  -->
+<!-- - [April](#apr24) -->
+<!-- - [May](#may24) -->
+<!-- - [June](#jun24) -->
+<!-- - [July](#jul24) -->
+<!-- - [August](#aug24) -->
+<!-- - [September](#sep24) -->
+<!-- - [October](#oct24)   -->
+<!-- - [November](#nov24)  -->
+<!-- - [December](#dec24) -->
 
 
 
-<!-- <a id="mar24"></a>
-<a id="apr24"></a>
-<a id="may24"></a>
-<a id="jun24"></a>
-<a id="jul24"></a>
-<a id="aug24"></a>
-<a id="sep24"></a>
-<a id="oct24"></a>
-<a id="nov24"></a>
-<a id="dec24"></a> -->
+
 
 
 ## February 
@@ -252,3 +242,16 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
     <span role="img" aria-label="place alt text here"> </span>
       all the rest of my content
   </div>
+
+
+
+<!-- <a id="mar24"></a> -->
+<!-- <a id="apr24"></a> -->
+<!-- <a id="may24"></a> -->
+<!-- <a id="jun24"></a> -->
+<!-- <a id="jul24"></a> -->
+<!-- <a id="aug24"></a> -->
+<!-- <a id="sep24"></a> -->
+<!-- <a id="oct24"></a> -->
+<!-- <a id="nov24"></a> -->
+<!-- <a id="dec24"></a> -->
