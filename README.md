@@ -204,15 +204,20 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
 <pre><code>
   <div>
     <span class="background-image" role="img" aria-label="place alt text here"> </span>
-      [all the rest of my content]
+      all the rest of my content
   </div>
 </code></pre>
 
 - - OR a slightly hackier way where the CSS background image is still applied to the div but will allow a screen reader to ignore the div and read the span's aria-label in liu of a normal alt tag before moving on to the content.
 
-<pre><code>
-  <div class="background-image">
-    <span role="img" aria-label="place alt text here"> </span>
-      [all the rest of my content]
-  </div>
-</code></pre>
+<pre>
+  <!-- <code> -->
+  `
+    <div class="background-image">
+      <span role="img" aria-label="place alt text here"> </span>
+        all the rest of my content
+    </div>
+    `
+  <!-- </code> -->
+</pre>
+
