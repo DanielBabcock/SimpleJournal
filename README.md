@@ -49,7 +49,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 ## May
 
 - and a further snippet url conditional content requiring further else if to you if - else.
-<pre><code>
+```
 <?php if (is_page('url')) { ?>
     <!-- write html here -->
 <?php } else if (is_page('partner-awana')) { ?>
@@ -59,7 +59,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <?php } else { ?>
     <!-- write html here -->
 <?php } ?>
-</code></pre>
+
 
 ## JULY
 
