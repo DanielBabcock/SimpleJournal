@@ -179,9 +179,8 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
 - [February](#feb24)
 
 
-<a name="feb24">
-  ## February 
-</a>
+<a id="feb24"></a>
+## February 
 
 - Alt text solutions for CSS Background Images: 
 - - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
