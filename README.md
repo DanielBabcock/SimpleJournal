@@ -1,12 +1,21 @@
 # Simple Journal
 
-May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more. It's also a place a I just put random simple things that I forget exactly how to use.
+May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more. It's also a place I put random simple things that I can reference later.
 
 <!-- ## Table of contents -->
 # Tables of Contents
+- [Legend](#legend).
 - [Table of Contents 2019](#contents19).
 - [Table of Contents 2023](#contents23).
 - [Table of Contents 2024](#contents24).
+
+<a id="legend"></a>
+
+## Legend
+- bullets and sub bullets are info points
+- ! = ideas
+- ¿  ? = questions
+- TIL = Today I Learned
 
 <a id="contents19"></a>
 
