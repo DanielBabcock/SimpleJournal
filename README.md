@@ -4,19 +4,19 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 <!-- ## Table of contents -->
 # Tables of Contents
-- [Table of Contents 2019](#contents19)
-- [Table of Contents 2023](#contents23)
-- [Table of Contents 2024](#contents24)
+- [Table of Contents 2019](#contents19).
+- [Table of Contents 2023](#contents23).
+- [Table of Contents 2024](#contents24).
 
-
-## Table of Contents 2019 
 <a id="contents2019"></a>
 
+## Table of Contents 2019 
 - [July](#jul19)
 - [August](#aug19)
 
 
 <a id="jul19"></a>
+
 ## July 
 
 - TIL/still Confused: Javascript Hoisting [Article: Understanding Hoisting in Javascrip](https://scotch.io/tutorials/understanding-hoisting-in-javascript "Understanding Hoisting in Javascript")
@@ -25,14 +25,15 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   ](https://www.taniarascia.com/es6-syntax-and-feature-overview/ "ES6 Syntax and Feature Overview
 ").
 
-## August
 <a id="aug19"></a>
+
+## August
 
 - TIL: Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
 
+<a id="contents2023"></a>
 
 ## Table of Contents 2023
-<a id="contents2023"></a>
 
 - [January](#jan23)
 - [March](#mar23) 
@@ -42,8 +43,9 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - [September](#sep23)
 - [October](#oct23)  
 
-## January #jan
 <a id="jan23"></a>
+
+## January #jan
 
 - TIL: Px vs REM [Article: Why designers should move from px to rem ](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15 "Why designers should move from px to rem ") : "we are in the dark about users browser preset choices, so using rem will serve zoom and root font-size change and make everyone happy."
 - TIL: for Hubspot form embeds on external sites you can remove CSS styling coming from Hubspot by adding "css" to remove basic styling and "cssRequired" to remove styling from required items to the embed code. Example:
@@ -53,8 +55,9 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
       css: '',
   </code>
 
-## March
 <a id="mar23"></a>
+
+## March
 
 - Snippet: for switching content based on URL in PHP Wordpress Templates. Saves writing multiple templates often times, primary example is a Landing Page and it's coresponding Thank You page or just multiple pages with very similar content and small diffs.
   ```
@@ -65,8 +68,9 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   <?php } ?>
 
 
-## May
 <a id="may23"></a>
+
+## May
 
 - and a further snippet url conditional content requiring further else if to your if - else. (write unique html/code in between each)
 
@@ -82,9 +86,10 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   <?php } ?>
 
 
+<a id="jul23"></a>
 
 ## July
-<a id="jul23"></a>
+
 - Was struggling with indention in lists and paragraphs specifically around using custom images in the places of bullet points with a nice amount of space between them and the first line while keeping the subsequent lines from overflowing under the list decoration images..
   ```
   <style>
@@ -122,12 +127,12 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - -  w/ html
 
 <pre><code>
-  [mb_pardot handler="{URL-here}" brand="HGS" prospect="MQL" interest="" redirect="{URL-here}" button_color="##f47a55"]      
+  [brand_pardot handler="{URL-here}" brand="___" prospect="MQL" interest="" redirect="{URL-here}" button_color="##fff"]      
   </code></pre>
 
+<a id="aug23"></a>
 
 ## August
-<a id="aug23"></a>
 
 - #If IE BUGS you can use this media query to attack them without breaking things in normal browsers:
   ```
@@ -135,17 +140,17 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
       // IE10+ CSS here
     }
 
+<a id="sep23"></a>
 
 ## September
-<a id="sep23"></a>
 
 - PHP Template place to drop content in via the admin page editor.
   ```
   <?php the_content(); ?>
 
+<a id="oct23"></a>
 
 ## October 2023
-<a id="oct23"></a>
 
 - simple css hack to help visually debug layout issues..
   ```
@@ -199,10 +204,9 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 <pre><code>nvm install node</code></pre>
 
-## Table of contents 2024
 <a id="contents24"></a>
 
-
+## Table of contents 2024
 
 - [Febraury](#feb24)
 <!-- - [March](#mar24)  -->
@@ -216,13 +220,9 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <!-- - [November](#nov24)  -->
 <!-- - [December](#dec24) -->
 
-
-
-
-
+<a id="feb24"></a>
 
 ## February 
-<a id="feb24"></a>
 
 - Alt text solutions for CSS Background Images: 
 - - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
