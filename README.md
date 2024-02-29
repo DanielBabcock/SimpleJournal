@@ -3,13 +3,21 @@
 May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, Questions I had || Answers found, Topics of Curiosity, and more. It's also a place a I just put random simple things that I forget exactly how to use.
 
 <!-- ## Table of contents -->
-<a id="feb24"></a>
-
-
-
+# Tables of Contents
+- [Table of Contents 2019](#contents19)
+- [Table of Contents 2023](#contents23)
 - [Table of Contents 2024](#contents24)
 
-## July
+
+## Table of Contents 2019 
+<a id="conetnts2019"></a>
+
+- [July](#jul19)
+- [August](#aug19)
+
+
+## July 
+<a id="jul19"></a>
 
 - TIL/still Confused: Javascript Hoisting [Article: Understanding Hoisting in Javascrip](https://scotch.io/tutorials/understanding-hoisting-in-javascript "Understanding Hoisting in Javascript")
 - TIL: about Block Scope vs Function Scope, [here's an article about it.](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe "The Difference Between Function and Block Scope in JavaScript")
@@ -18,14 +26,24 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 ").
 
 ## August
+<a id="aug19"></a>
 
 - TIL: Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
 
-## Table of contents 2023
 
-- [January](#jan)
+## Table of Contents 2023
+<a id="conetnts2023"></a>
+
+- [January](#jan23)
+- [March](#mar23) 
+- [May](#may23)
+- [July](#jul23)
+- [August](#aug23)
+- [September](#sep23)
+- [October](#oct23)  
 
 ## January #jan
+<a id="jan23"></a>
 
 - TIL: Px vs REM [Article: Why designers should move from px to rem ](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15 "Why designers should move from px to rem ") : "we are in the dark about users browser preset choices, so using rem will serve zoom and root font-size change and make everyone happy."
 - TIL: for Hubspot form embeds on external sites you can remove CSS styling coming from Hubspot by adding "css" to remove basic styling and "cssRequired" to remove styling from required items to the embed code. Example:
@@ -36,6 +54,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   </code>
 
 ## March
+<a id="mar23"></a>
 
 - Snippet: for switching content based on URL in PHP Wordpress Templates. Saves writing multiple templates often times, primary example is a Landing Page and it's coresponding Thank You page or just multiple pages with very similar content and small diffs.
   ```
@@ -46,12 +65,14 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
   
   
   <?php } ?>
-<!-- ``` -->
+
 
 ## May
+<a id="may23"></a>
 
 - and a further snippet url conditional content requiring further else if to you if - else.
-```
+
+<pre>
 <?php if (is_page('url')) { ?>
     <!-- write html here -->
 <?php } else if (is_page('partner-awana')) { ?>
@@ -61,10 +82,11 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <?php } else { ?>
     <!-- write html here -->
 <?php } ?>
+</pre>
 
 
-## JULY
-
+## July
+<a id="jul23"></a>
 - Was struggling with indention in lists and paragraphs specifically around using custom images in the places of bullet points with a nice amount of space between them and the first line while keeping the subsequent lines from overflowing under the list decoration images..
 ```
   <style>
@@ -95,25 +117,29 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 
 - Two ways to generate Pardot Forms in Wordpress sites after downloading the plugin:
-  w/ php
-```
+  w/ php 
+  ```
   <?php echo do_shortcode('[mb_pardot handler="{URL-here}" brand="brand_asc" prospect="MQL" interest="ChMS" redirect="{URL-here}" comments_type="textarea" comments="How did you hear about us?" button_color="#6486FD"]') ?>      
-```      
+    
 - -  w/ html
-```
+
+<pre><code>
   [mb_pardot handler="{URL-here}" brand="HGS" prospect="MQL" interest="" redirect="{URL-here}" button_color="##f47a55"]      
-```
+  </code></pre>
+
 
 ## August
+<a id="aug23"></a>
 
 - #If IE BUGS you can use this media query to attack them without breaking things in normal browsers:
 ```
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       // IE10+ CSS here
     }
-```
+
 
 ## September
+<a id="sep23"></a>
 
 - PHP Template place to drop content in via the admin page editor.
 ```
@@ -121,6 +147,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 ```
 
 ## October 2023
+<a id="oct23"></a>
 
 - simple css hack to help visually debug layout issues..
 ```
@@ -175,14 +202,39 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
 
 <pre><code>nvm install node</code></pre>
 
-<a id="contents24"></a>
 ## Table of contents 2024
+<a id="contents24"></a>
 
-- [February](#feb24)
 
 
-<a id="feb24"></a>
+- [Febraury](#feb24)
+<!-- - [March](#mar24) 
+- [April](#apr24)
+- [May](#may24)
+- [June](#jun24)
+- [July](#jul24)
+- [August](#aug24)
+- [September](#sep24)
+- [October](#oct24)  
+- [November](#nov24) 
+- [December](#dec24) -->
+
+
+
+<!-- <a id="mar24"></a>
+<a id="apr24"></a>
+<a id="may24"></a>
+<a id="jun24"></a>
+<a id="jul24"></a>
+<a id="aug24"></a>
+<a id="sep24"></a>
+<a id="oct24"></a>
+<a id="nov24"></a>
+<a id="dec24"></a> -->
+
+
 ## February 
+<a id="feb24"></a>
 
 - Alt text solutions for CSS Background Images: 
 - - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
@@ -193,7 +245,7 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
     <span class="background-image" role="img" aria-label="place alt text here"> </span>
       all the rest of my content
   </div>
-```
+
 
 - - OR a slightly hackier way where the CSS background image is still applied to the div but will allow a screen reader to ignore the div and read the span's aria-label in liu of a normal alt tag before moving on to the content.
 
@@ -202,6 +254,3 @@ To install the latest version of <a href="https://nodejs.org/en" target="_blank"
     <span role="img" aria-label="place alt text here"> </span>
       all the rest of my content
   </div>
-```
-
-
