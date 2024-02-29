@@ -8,7 +8,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - [Table of Contents 2023](#contents23).
 - [Table of Contents 2024](#contents24).
 
-<a id="contents2019"></a>
+<a id="contents19"></a>
 
 ## Table of Contents 2019 
 - [July](#jul19)
@@ -31,7 +31,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 
 - TIL: Inspect previous commit. `git log` , find the commit you wish to checkout and copy its hash, `git checkout <commit hash>`
 
-<a id="contents2023"></a>
+<a id="contents23"></a>
 
 ## Table of Contents 2023
 
