@@ -242,7 +242,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <!-- <a id="dec24"></a> -->
 
 ## February 
-
+<a id="altHacks"></a>
 - Alt text solutions for CSS Background Images: 
 - - (this is for background images that are contextual, if they are not contextual then they can be ignored, unsure if automated SEO/Accessibilty audit will spot the fix though manual testing should accept it)
 - - Instead of applying a background image to a div or other block element via CSS background image apply it to the span within the div with rol= and aria-label= applied and the content inside of that span.
@@ -272,7 +272,8 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - - NotificationX
 - - Better Find and Replace
 - - Better Search Replace
-- - 
+- - WP Rocket
+- - Hummingbird
 
 
 ### Common errors for Content Producers (SEO, Performance, Accessibility):
@@ -292,5 +293,25 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - - - Keep both titles short (55 characters or less recommended, 60 char absolute max) 
 
 - Images:
-- - Sizing:
+- - Sizing: Most Images do not need to 
 - - Accessibility: 
+- - - Alt Tags: INCLUDE THEM! Make them Concise enough not to waste a lot of screen reader time but clear enough to translate any content relevancy. In WordPress you can add Alt tags to images as you upload them. In code you do this with and alt="description here" tag. If you can not add them directly in a case like a CSS background image [here are some hacks.](#altHacks)
+
+- Meta Descriptions
+- - Max 156 characters, 
+- - must different than the Title and Heading
+
+- Content length:
+- - Min 300 words.
+
+- ¿ Need to Learn more about Web Components with Vanilla code. ?
+
+### After acquiring benchmark testing scores test these plugins on Group Code (DR0) Site Code (DR0-DRR) as test bed for all (DR0) broad spectrum performance tweaks:
+- Wp Rocket
+- Smush
+- Hummingbird if not rocket
+- Broken Link Checker 
+- Health Check & Troubleshooting
+- WP-Optimize
+- GFChart (gravity forms data visuals)
+- 
