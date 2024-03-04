@@ -73,26 +73,11 @@ Extensions:
 
 Run the following command in your Terminal. You will be prompted for your computer password. It will not display the characters as you type them for security reasons. <a href="https://brew.sh/">https://brew.sh/</a>
 
-<!-- below in gist
+below in gist
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-homebrew.sh)"
-``` -->
-
-```sh
-#!/bin/bash
-
-if ! type brew &>/dev/null; then
-    echo -e "\n\n\n\n Installing Homebrew..."
-
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-    echo 'eval $(/opt/homebrew/bin/brew shellenv)' >>$HOME/.zprofile
-    eval $(/opt/homebrew/bin/brew shellenv)
-fi
-
-echo -e "\n\nInstalling git and terminal customization tools..."
-brew install -q git tig zsh zsh-completions
+/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/5051d1a4cce542474cda254d17067638)"
 ```
+
 
 Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact an instructor.
 
@@ -100,63 +85,12 @@ Once the process is complete, run the `brew` command in your terminal. If you se
 
 Run the following command in your Terminal.
 
-<!-- you can use commands like
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/163e9eb5ba26458f13a51508b80ea462ec4c708e/create-key.sh)"
-to have all of the below code in a gist instead of pasting all into terminal -->
 <!-- ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ``` -->
 
 ```sh
-#!/bin/bash
-
-current_shell=$(echo $SHELL)
-if [ $current_shell == "/bin/bash" ]; then
-  echo -e "\n\n\n"
-  echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-  echo "@@                                                        @@"
-  echo "@@   Change Needed: Switch to zsh                         @@"
-  echo "@@   This change might require your computer password.    @@"
-  echo "@@                                                        @@"
-  echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-  ZSH_PATH=$(which zsh >>/dev/null)
-  if [ $? != 0 ]; then
-    echo "ERROR: zsh not found. Skipping chsh"
-  else
-    SWITCHED=$(chsh -s $ZSH_PATH >>/dev/null)
-    if [ $? != 0 ]; then
-      echo "ERROR: Could not chsh to zsh"
-    else
-      new_shell=$(echo $SHELL)
-      if [ $new_shell != "$ZSH_PATH" ]; then
-        # The rest of the installs will not work if zsh is not the default shell
-        echo "ERROR: Shell did not change to zsh."
-        exit 1
-      fi
-    fi
-  fi
-
-else
-  echo "Already using zsh as default shell"
-fi
-
-ZSH_FOLDER=$HOME/.oh-my-zsh
-if [ ! -d "$FOLDER" ]; then
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-fi
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-fi
-
-if grep -q "(zsh-autosuggestions zsh-syntax-highlighting" ~/.zshrc; then
-  echo "Text already exists"
-else
-  sed -i'.original' 's#^plugins=(#plugins=(zsh-autosuggestions zsh-syntax-highlighting #' $HOME/.zshrc
-fi
+/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/55d9f18f49d5897300f9ec1eaa39596a)"
 ```
 
 Once complete, run the following command in your Terminal.
@@ -168,81 +102,22 @@ echo $SHELL
 You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that command. If you don't, contact an instructor.
 
 ### Install Node
-<!-- /bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-nvm-node.sh)" -->
-Run the following command in your Terminal.
-
 ```sh
-  #!/bin/bash
-  
-if ! type nvm &>/dev/null; then
-  echo -e "Installing Node Version Manager..."
-
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash >>/dev/null
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-fi
-
-nvm install --lts
-nvm use --lts
-
-echo -e "\nInstalling a web server and a simple API server..."
-npm config set prefix $HOME/.npm-packages
-echo 'export PATH="$PATH:$HOME/.npm-packages/bin"' >>~/.zshrc
-source ~/.zshrc &>zsh-reload.log
-npm i -g serve json-server json)"
+/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/b721fd90ddf675274a9d4be750df6d49)"
 ```
+
 
 Once the process is complete, quit your Terminal application completely, and then open it again immediately.
 
 Run the `node -v` command in your Terminal. If you see the output `command not found: node` then contact an instructor.
 
 ### Verify Installs:
-<!-- /bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/a1f8f3bebf7fab75e5bfb0d1ecabc89ab22baec8/verify-installs.sh)" -->
-
 ```sh
-#!/bin/bash
-
-echo -e "\n\n\n\n"
-echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-echo "@@                                                             @@"
-echo "@@                   VERIFYING INSTALLS                        @@"
-echo "@@                                                             @@"
-echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-echo ""
-
-if ! type brew &>/dev/null; then
-  echo "ERROR: Brew not installed"
-else
-  echo "Brew installed"
-fi
-
-if ! type node &>/dev/null; then
-  echo "ERROR: Node not installed"
-else
-  echo "Node installed"
-fi
-
-if ! type serve &>/dev/null; then
-  echo "ERROR: serve not installed"
-else
-  echo "serve installed"
-fi
-
-if ! type json-server &>/dev/null; then
-  echo "ERROR: json-server not installed"
-else
-  echo "json-server installed"
-fi
-
-if xcode-select -p &>/dev/null; then
-    echo "Xcode is installed."
-else
-    echo "ERROR: Xcode is not installed. Please install Xcode."
-fi
+/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/4c8ae4d61516788f491ee504f16f85e7)"
 ```
+
 ### Project setup example
-- <a href="https://gist.github.com/stevebrownlee/9cc1d26c3387aa9d987a241466c8e3a6">https://gist.github.com/stevebrownlee/9cc1d26c3387aa9d987a241466c8e3a6</a>
+- <a href="https://gist.github.com/DanielBabcock/3d11af493ca4ac2b7e47f015c8952f52">project-setup.sh idea stolen from NSS/Coach</a>
 
 <a id="contents19"></a>
 
