@@ -5,6 +5,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 <!-- ## Table of contents -->
 # Tables of Contents
 - [Legend](#legend).
+- [Setting up a new Machine](#newMachine).
 - [Table of Contents 2019](#contents19).
 - [Table of Contents 2023](#contents23).
 - [Table of Contents 2024](#contents24).
@@ -16,6 +17,96 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - ! = ideas
 - ¿  ? = questions
 - TIL = Today I Learned
+
+<a id="newMachine"></a> 
+
+## New Machine Setup:
+
+### Programs to Install:
+- Adobe ???
+- ClenMyMac X
+- Figma
+- FileZilla
+- Firefox, Edge, Chrome (plugins below), Brave, Opera, Firefox Focus
+- Visual Studio Code (further instructions and Plugins below)
+- ImageOptim
+- Password Manager/s 
+- Microsoft Office and/or Mac equivalents
+- Teams and Slack
+- Zoom
+- VPN/s
+- XCode
+- 
+
+### Chrome Plugins
+- Password Manager 
+- Pomodoro
+- Axe Dev Tools
+- Lighthouse
+- Color Contrast Analyzer by accessibility.oit.ncsu.edu
+- Browserstack and Browserstack Accessibility
+- Debug CSS
+- Fake Filler
+- uBlock Origin
+- Wapp Analyzer
+- Wave Evaluation Tool
+- Web Developer Checklist
+- React Developer Tools
+- ¿¿¿ Website SEO Checker: Free Audit & Analysis
+- ¿¿¿ CSS Peeper
+
+
+### Install Visual Studio Code
+Extensions:
+- <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto Close tags</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve">Multi-Cursor Case Preserve</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">Git Lens</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">HTML/CSS Class auto complete</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client">PHP Intelephense</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php">Format HTML in PHP</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=d-koppenhagen.file-tree-to-text-generator">File Tree to Text Generator</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>
+
+
+### Install Homebrew
+
+Run the following command in your Terminal. You will be prompted for your computer password. It will not display the characters as you type them for security reasons. <a href="https://brew.sh/">https://brew.sh/</a>
+
+```sh
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-homebrew.sh)"
+```
+
+Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact an instructor.
+
+### Install Modern Shell
+
+Run the following command in your Terminal.
+
+```sh
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/configure-zsh.sh)"
+```
+
+Once complete, run the following command in your Terminal.
+
+```sh
+echo $SHELL
+```
+
+You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that command. If you don't, contact an instructor.
+
+### Install Node
+
+Run the following command in your Terminal.
+
+```sh
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-nvm-node.sh)"
+```
+
+Once the process is complete, quit your Terminal application completely, and then open it again immediately.
+
+Run the `node -v` command in your Terminal. If you see the output `command not found: node` then contact an instructor.
+
 
 <a id="contents19"></a>
 
@@ -290,10 +381,11 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - - - Include the page’s primary keyword in both tags
 - - - Try to place the keyword early in both tags
 - - - Use the keyword only once within each tag
-- - - Keep both titles short (55 characters or less recommended, 60 char absolute max) 
+- - - Keep both titles short (55 characters or less recommended, 65 char max) 
 
 - Images:
-- - Sizing: Most Images do not need to 
+- - Canvas Sizing: The Canvas size affects file size and processing power. Most Images do not need to over 2000px wide. For larger images such as full width banner, background, or high resolution art I usually still top them out at 2850px. 
+- - File sizing: Make and effort to lower file sizes and strip metadata. There are tons of tools out there to make this easy, ImageOptim (free program), TinyPNG (browser), and Adobe Lightroom or Photoshop for a few examples. You can usually get away with even running lossy compression in the 75%-90% range for more file compression before your eyes will see the difference (experiment with this).
 - - Accessibility: 
 - - - Alt Tags: INCLUDE THEM! Make them Concise enough not to waste a lot of screen reader time but clear enough to translate any content relevancy. In WordPress you can add Alt tags to images as you upload them. In code you do this with and alt="description here" tag. If you can not add them directly in a case like a CSS background image [here are some hacks.](#altHacks)
 
