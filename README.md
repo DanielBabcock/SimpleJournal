@@ -74,7 +74,7 @@ Extensions:
 Run the following command in your Terminal. You will be prompted for your computer password. It will not display the characters as you type them for security reasons. <a href="https://brew.sh/">https://brew.sh/</a>
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-homebrew.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact an instructor.
@@ -84,7 +84,7 @@ Once the process is complete, run the `brew` command in your terminal. If you se
 Run the following command in your Terminal.
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/configure-zsh.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Once complete, run the following command in your Terminal.
@@ -100,7 +100,25 @@ You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that c
 Run the following command in your Terminal.
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/stevebrownlee/b146bf49071c46c41eddf5778b147a71/raw/47a842f39a43a4b7d7c3dafcb127c74f99082580/install-nvm-node.sh)"
+  #!/bin/bash
+  
+if ! type nvm &>/dev/null; then
+  echo -e "Installing Node Version Manager..."
+
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash >>/dev/null
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+fi
+
+nvm install --lts
+nvm use --lts
+
+echo -e "\nInstalling a web server and a simple API server..."
+npm config set prefix $HOME/.npm-packages
+echo 'export PATH="$PATH:$HOME/.npm-packages/bin"' >>~/.zshrc
+source ~/.zshrc &>zsh-reload.log
+npm i -g serve json-server json)"
 ```
 
 Once the process is complete, quit your Terminal application completely, and then open it again immediately.
