@@ -68,6 +68,11 @@ Extensions:
 - <a href="https://marketplace.visualstudio.com/items?itemName=d-koppenhagen.file-tree-to-text-generator">File Tree to Text Generator</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>
 
+### Github access token
+
+```sh
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/DanielBabcock/b11e0df92ec970868f83e56dd4e00729/raw/ddb2f40807452eb61e145cf7b0234d84e5c00b8b/create-key.sh)"
+```
 
 ### Install Homebrew
 
@@ -75,11 +80,31 @@ Run the following command in your Terminal. You will be prompted for your comput
 
 below in gist
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/5051d1a4cce542474cda254d17067638)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` figure it out. Some stuff is commented out in the raw markup immediately below this..
 
-Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact an instructor.
+<!-- ==> zsh-completions
+To activate these completions, add the following to your .zshrc:
+```sh
+  if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
+```
+You may also need to force rebuild `zcompdump`:
+```sh
+  rm -f ~/.zcompdump; compinit
+```
+Additionally, if you receive "zsh compinit: insecure directories" warnings when attempting
+to load these completions, you may need to run these commands:
+```sh
+  chmod go-w '/opt/homebrew/share'
+  chmod -R go-w '/opt/homebrew/share/zsh'
+``` -->
 
 ### Install Modern Shell
 
@@ -90,7 +115,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ``` -->
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/55d9f18f49d5897300f9ec1eaa39596a)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/DanielBabcock/55d9f18f49d5897300f9ec1eaa39596a/raw/e60e0688f5b4fbb3cf367f92d76d35eaa67d377e/configure-zsh.sh)"
 ```
 
 Once complete, run the following command in your Terminal.
@@ -103,7 +128,7 @@ You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that c
 
 ### Install Node
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/b721fd90ddf675274a9d4be750df6d49)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/DanielBabcock/b721fd90ddf675274a9d4be750df6d49/raw/e6a99f919efbbd4be9eae3e7a6654f39f58b78f6/install-nvm.sh)"
 ```
 
 
@@ -113,11 +138,12 @@ Run the `node -v` command in your Terminal. If you see the output `command not f
 
 ### Verify Installs:
 ```sh
-/bin/bash -c "$(curl -fsSL https://gist.github.com/DanielBabcock/4c8ae4d61516788f491ee504f16f85e7)"
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/DanielBabcock/4c8ae4d61516788f491ee504f16f85e7/raw/ae02c52727848dd23b9f39f663b110dc124ae8fd/verify-installs.sh)"
 ```
 
 ### Project setup example
 - <a href="https://gist.github.com/DanielBabcock/3d11af493ca4ac2b7e47f015c8952f52">project-setup.sh idea stolen from NSS/Coach</a>
+https://gist.githubusercontent.com/DanielBabcock/3d11af493ca4ac2b7e47f015c8952f52/raw/138f3127ad0e07827268eb8278e09040fbc2bcdf/projectsetup.sh
 
 <a id="contents19"></a>
 
@@ -321,7 +347,7 @@ Run the `node -v` command in your Terminal. If you see the output `command not f
 
 - [Febraury](#feb24)
 <!-- - [March](#mar24)  -->
-<!-- - [April](#apr24) -->
+- [April](#apr24)
 <!-- - [May](#may24) -->
 <!-- - [June](#jun24) -->
 <!-- - [July](#jul24) -->
@@ -333,7 +359,7 @@ Run the `node -v` command in your Terminal. If you see the output `command not f
 
 <a id="feb24"></a>
 <!-- <a id="mar24"></a> -->
-<!-- <a id="apr24"></a> -->
+
 <!-- <a id="may24"></a> -->
 <!-- <a id="jun24"></a> -->
 <!-- <a id="jul24"></a> -->
@@ -418,3 +444,18 @@ Run the `node -v` command in your Terminal. If you see the output `command not f
 - WP-Optimize
 - GFChart (gravity forms data visuals)
 - 
+
+<a id="apr24"></a>
+
+## April 
+Animating SVGs can be done by adding a version of the below code inside the shape section (ex: line, path, circle) of an SVG.
+```
+<animateTransform 
+       attributeName="transform" 
+       dur="15s"
+       type="rotate"
+       from="0 50 50"
+       to="360 50 50"
+       repeatCount="indefinite" />
+       
+       
