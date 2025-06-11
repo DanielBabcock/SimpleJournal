@@ -9,6 +9,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - [Table of Contents 2019](#contents19).
 - [Table of Contents 2023](#contents23).
 - [Table of Contents 2024](#contents24).
+- [Table of Contents 2025](#contents25).
 
 <a id="legend"></a>
 
@@ -459,7 +460,8 @@ Animating SVGs can be done by adding a version of the below code inside the shap
        to="360 50 50"
        repeatCount="indefinite" />
        
-       
+<a id="contents25"></a>
+
 ## Table of contents 2025
 
 - [June](#jun24)
