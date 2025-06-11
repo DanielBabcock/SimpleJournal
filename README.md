@@ -54,6 +54,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - React Developer Tools
 - ¿¿¿ Website SEO Checker: Free Audit & Analysis
 - ¿¿¿ CSS Peeper
+- 
 
 
 ### Install Visual Studio Code
@@ -459,3 +460,76 @@ Animating SVGs can be done by adding a version of the below code inside the shap
        repeatCount="indefinite" />
        
        
+## Table of contents 2025
+
+- [June](#jun24)
+
+## June
+
+Zsh Aliases 
+''' 
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# GIT
+alias g="git"
+alias ga="git add"
+alias gaa="git add ."
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbb="git branch -b" 
+alias gc="git checkout" 
+alias gcb="git checkout -b"
+alias gcm="git checkout master"
+alias gc-m="git commit -m"
+alias gm="git merge"
+alias gpsh="git push"
+alias gpo="git push origin"
+alias gs="git status"
+alias p="git pull" 
+alias po="git pull origin"
+alias pom="git pull origin master"
+alias openzsh="open ~/.zshrc"
+alias viewzsh="cat ~/.zshrc"
+
+# Other Dev
+alias ll="ls -FGLAhp"
+alias l="ls -lahp"
+alias c="clear"
+alias b="cd .."
+alias nuke="killall node"
+alias kill="killall ssh"alias ~="cd ~"
+alias edit="subl"
+alias find="open -a Finder ./"
+alias editrc="subl ~/.zshrc"
+alias sourcerc="source ~/.zshrc"
+alias path="echo -e ${PATH//:/\\n}"
+cd() { builtin cd "$@"; ll; }
+alias sourceprofile="source ~/.zprofile"
+alias editprofile="source ~/.zprofile"
+
+
+# CD shortcuts ----------------
+alias cdw="cd Workspace"
+alias cddr="cd Workspace/DeployedResources"
+alias cdp="cd Workspace/Personal"
+
+# NPM ---------------------
+alias nrd="npm run dev"
+alias st="npm start"
+alias i="npm install"
+alias up="npm upgrade"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# VSC ---------------------
+alias code="/usr/local/bin/code $(pwd) 1>/dev/null 2>&1"
+
+# Fun ---------------------
+alias dadJoke="curl -H 'Accept: text/plain' https://icanhazdadjoke.com/ ; echo"export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$PATH:$HOME/.npm-packages/bin"
