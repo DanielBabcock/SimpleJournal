@@ -33,8 +33,7 @@ May contain items such as: Today I Learned (TIL), Fails, Wins, Helps, Snippets, 
 - ImageOptim
 - Password Manager/s 
 - Microsoft Office and/or Mac equivalents
-- Teams and Slack
-- Zoom
+- Teams, Slack, Discord, Zoom
 - VPN/s
 - XCode
 - 
